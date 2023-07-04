@@ -1,6 +1,6 @@
 ldapadd -x -D cn=admin,dc=ibantfg,dc=com -W -f user.ldif
 ldapadd -x -D cn=admin,dc=ibantfg,dc=com -W -f grp.ldif
-
+slapcat
 
 dn: uid=javier,dc=ibantfg,dc=com
 objectClass: top

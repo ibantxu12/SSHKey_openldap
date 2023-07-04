@@ -28,40 +28,54 @@ services:
       - openldap_n
 
   client1:
-    image: ubuntu:latest
+    image: ibantxu12/uldapyssh
     container_name: client1
     hostname: cliente1
+    ports:
+      - 221:22
     networks:
       - openldap_n
-    command: tail -f /dev/null
+    command: /usr/sbin/sshd -D
 
   client2:
-    image: ubuntu:latest
+    image: ibantxu12/uldapyssh
     container_name: client2
     hostname: cliente2
+    ports:
+      - 222:22
     networks:
       - openldap_n
-    command: tail -f /dev/null
+    command: /usr/sbin/sshd -D
 
   client3:
-    image: ubuntu:latest
-    command: tail -f /dev/null
+    image: ibantxu12/uldapyssh
+    container_name: client3
+    hostname: cliente3
+    ports:
+      - 223:22
+    networks:
+      - openldap_n
+    command: /usr/sbin/sshd -D
 
   client4:
-    image: ubuntu:latest
-    command: tail -f /dev/null
+    image: ibantxu12/uldapyssh
+    container_name: client4
+    hostname: cliente4
+    ports:
+      - 224:22
+    networks:
+      - openldap_n
+    command: /usr/sbin/sshd -D
 
   client5:
-    image: ubuntu:latest
-    command: tail -f /dev/null
-
-  client6:
-    image: ubuntu:latest
-    command: tail -f /dev/null
-
-  client7:
-    image: ubuntu:latest
-    command: tail -f /dev/null
+    image: ibantxu12/uldapyssh
+    container_name: client5
+    hostname: cliente5
+    ports:
+      - 225:22
+    networks:
+      - openldap_n
+    command: /usr/sbin/sshd -D
 
 networks:
   openldap_n:
