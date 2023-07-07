@@ -1,0 +1,103 @@
+dn: ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+
+# Usuario Javier
+dn: uid=javier,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Javier
+sn: Javier
+uid: javier
+uidNumber: 1001
+gidNumber: 1001
+homeDirectory: /home/javier
+userPassword: {crypt}x
+mail: javier@ibantfg.com
+
+# Usuario Mark
+dn: uid=mark,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Mark
+sn: Mark
+uid: mark
+uidNumber: 1002
+gidNumber: 1001
+homeDirectory: /home/mark
+userPassword: {crypt}x
+mail: mark@ibantfg.com
+
+# Usuario Lorea
+dn: uid=lorea,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Lorea
+sn: Lorea
+uid: lorea
+uidNumber: 1003
+gidNumber: 1002
+homeDirectory: /home/lorea
+userPassword: {crypt}x
+mail: lorea@ibantfg.com
+
+# Usuario Maite
+dn: uid=maite,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Maite
+sn: Maite
+uid: maite
+uidNumber: 1004
+gidNumber: 1002
+homeDirectory: /home/maite
+userPassword: {crypt}x
+mail: maite@ibantfg.com
+
+# Usuario Olatz
+dn: uid=olatz,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Olatz
+sn: Olatz
+uid: olatz
+uidNumber: 1005
+gidNumber: 1003
+homeDirectory: /home/olatz
+userPassword: {crypt}x
+mail: olatz@ibantfg.com
+
+# Usuario Mikel
+dn: uid=mikel,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Mikel
+sn: Mikel
+uid: mikel
+uidNumber: 1006
+gidNumber: 1003
+homeDirectory: /home/mikel
+userPassword: {crypt}x
+mail: mikel@ibantfg.com
+
+# Usuario Mario
+dn: uid=mario,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Mario
+sn: Mario
+uid: mario
+uidNumber: 1007
+gidNumber: 1003
+homeDirectory: /home/mario
+userPassword: {crypt}x
+mail: mario@ibantfg.com
