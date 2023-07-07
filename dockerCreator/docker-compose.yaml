@@ -15,9 +15,7 @@ services:
       - LDAP_TLS_KEY_FILENAME=server.key
       - LDAP_TLS_CA_CRT_FILENAME=ibantfg.com.ca.crt
     volumes:
-      - ./ldapConf/certificates:/container/service/slapd/assets/certs
       - ./ldapConf/slapd/database:/var/lib/ldap
-      - ./ldapConf/slapd/config:/etc/ldap/slapd.d
     networks:
       - openldap_n
 

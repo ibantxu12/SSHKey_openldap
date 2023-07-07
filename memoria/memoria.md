@@ -14,3 +14,5 @@ Ejecución: docker-compose up -d
 
 Ejecución de los contenedores: docker exec -it <nombre_contenedor> bash
 
+- ./ldapConf/slapd/config:/etc/ldap/slapd.d
+- ./ldapConf/certificates:/container/service/slapd/assets/certs
