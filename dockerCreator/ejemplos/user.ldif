@@ -15,7 +15,7 @@ uid: javier
 uidNumber: 1001
 gidNumber: 1001
 homeDirectory: /home/javier
-userPassword: {crypt}x
+userPassword: javierPass
 mail: javier@ibantfg.com
 
 # Usuario Mark
@@ -29,7 +29,7 @@ uid: mark
 uidNumber: 1002
 gidNumber: 1001
 homeDirectory: /home/mark
-userPassword: {crypt}x
+userPassword: markPass
 mail: mark@ibantfg.com
 
 # Usuario Lorea
@@ -43,7 +43,7 @@ uid: lorea
 uidNumber: 1003
 gidNumber: 1002
 homeDirectory: /home/lorea
-userPassword: {crypt}x
+userPassword: loreaPass
 mail: lorea@ibantfg.com
 
 # Usuario Maite
@@ -57,7 +57,7 @@ uid: maite
 uidNumber: 1004
 gidNumber: 1002
 homeDirectory: /home/maite
-userPassword: {crypt}x
+userPassword: maitePass
 mail: maite@ibantfg.com
 
 # Usuario Olatz
@@ -71,7 +71,7 @@ uid: olatz
 uidNumber: 1005
 gidNumber: 1003
 homeDirectory: /home/olatz
-userPassword: {crypt}x
+userPassword: olatzPass
 mail: olatz@ibantfg.com
 
 # Usuario Mikel
@@ -85,7 +85,7 @@ uid: mikel
 uidNumber: 1006
 gidNumber: 1003
 homeDirectory: /home/mikel
-userPassword: {crypt}x
+userPassword: mikelPass
 mail: mikel@ibantfg.com
 
 # Usuario Mario
@@ -99,5 +99,5 @@ uid: mario
 uidNumber: 1007
 gidNumber: 1003
 homeDirectory: /home/mario
-userPassword: {crypt}x
+userPassword: marioPass
 mail: mario@ibantfg.com
