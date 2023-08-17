@@ -1,0 +1,110 @@
+dn: ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+
+# Usuario Javier
+dn: uid=javier,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Javier
+sn: Javier
+uid: javier
+uidNumber: 1001
+gidNumber: 1001
+homeDirectory: /home/javier
+userPassword: javierPass
+mail: javier@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDwR99sbF3Op7KCFBR2X8lu2QUZFjkku9+H3+/7LImh4O4MOXabNn5+bod+BeztKVUAIaevFTDHwLxxhRgbIpBENz37WJYz5TMuqLNCsfGLUEU6Q7ofnwVZ93Amg4rWoPZ6UBm+Dxqc+41vik9EyMQ+serDb1lfkw247913P7fe2lqpSwVjYjuNf0EdSHwYuxDAG0D0XNuDU1IvVq0areqkm9wcjn4NoPYyDFiMdKsxbUO8deVsIIMdJ0/UgxxCzFWvx7YLpt/xhxTWOKO3SpYZiMYhX39eLsoOhm2YOzJSVuKxunBBPK5QmgdYuvT2F0Hb8s5E8Y8qW+38JTHCPNyASD2n+BUiC82H6/3zp/kJgPHnagSNrtRNJLe/BpmnJ3UfFze4VA6ZFBgVPSh9IYbXv9y8XXwrLOn73D2pVzARvc1q4RTd0WAMcfoXHyyzx/waYRgmFLsa3O7O00pMU5idZPtm9Rmho7pnOLCkIELCqiKm9kbjb0mKwHbMG57oSik=
+
+# Usuario Mark
+dn: uid=mark,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Mark
+sn: Mark
+uid: mark
+uidNumber: 1002
+gidNumber: 1001
+homeDirectory: /home/mark
+userPassword: markPass
+mail: mark@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCaBf6SRWDq8StjnF9a0Qn5S07sOL0XMHMtBL+4yPRYN5oQHN6llnIv+knalM4BY2ofgENCgL8GckfYpWn7TSi0Yqv/2pG8EHGxccmMYVLAOXtrutlD23D/wpJ+P9iXwziE2pu2JCFXm977ROD8KlZIXoNG+mYeLRSY/FDFMpPuTjXWsvux/jZ1iuq4/gG/FNMn1m+R0af0exgHUPaXO9+Ruip5uAy4+/7wZjGatjgiWIZIabqiK7v+TK1V0Vm/phIvIg/cmORqyq3Y6pJfRcvt7rpFNjeqIfvmQE1WY3kNP72P3vNFa/hshL4vBuxsRSm1rTOJzZfzPG8Sgx+rFIziPKRRtEAhL2msmnlvFMBOxBuksnSg7g3NmXgJjpSw/UIzskcZnoNbZvjBCTYUDfGTYrtYdkawTtd1NnUphp8OD/bo5vEc9jokJpLRrFYTpGqCaxb+3YtaeEpJP/B80bCi2Q+khzWH2gtXJhVnQlJibQa1TNjlpQfBURXapjhWqFc=
+
+# Usuario Lorea
+dn: uid=lorea,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Lorea
+sn: Lorea
+uid: lorea
+uidNumber: 1003
+gidNumber: 1002
+homeDirectory: /home/lorea
+userPassword: loreaPass
+mail: lorea@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9t1/d3qA4P7FX50q7NsjlpgB644qlO15C8pW/afcQiGCLoZDJuiFwHbFjGac/sGJZHk2Jm7aoj/fHziulqVE7WSeCg4ECWyneHMVNjVeSo0h+i6wWSyAUviK9LUwLjJQaM7LvecDnYVcVNauoQPqyJYJvG5j3ANyQulmidqb/ITW/ebB8uSS3S+Z9tLVBS/X1m/r/m0pIWSEbTsmkbQ/T0ujFGSW2QGJtPtJfiatkhf4QoqEhgY8Yll91t6b1Bal6jT+zvziXvRKf4Zqh5j+fSTaZyGjour7jpBWqPve86NdIbm36C2108gQzRFAEkYtHuy0xfqFa5Rj4RhXoAeGDjcFwLKDoF1zXlE+kOaGQxcGXQFvF/Qqi4yol7KqW723mXL82t18NxBR3gyIYv5drorz3e4R4x6RflYDNMT/YYG0COQeNdWDjCBv+IYiZQHFz+U/sDMnN1yJyjmOeHe9Nm3HGwz+CfPmGnUZ9Re1v6MW5U4lHtvOh5Q38ir7qMMU=
+
+# Usuario Maite
+dn: uid=maite,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Maite
+sn: Maite
+uid: maite
+uidNumber: 1004
+gidNumber: 1002
+homeDirectory: /home/maite
+userPassword: maitePass
+mail: maite@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCnodCfu0hjTNPWc8UKJwi35mN+101Hm0/FOlVGvOEbvpRw+A1wP188tGCWFkqH81PZ4t7W1f4k3yibOVRdoY7G9qv8iJ3Nz8aaW84cy+JF6oj7ebFFVZIDrLREGNYvGDR6acOqsUPy5gPgO1MQLHHXatGnDDvHR9C4nnGYgHeoPbBNPjJZ/A1gvZrInQTCMchASUDsgpxHdtdTMp8YTrpx2Fbsc3tFxZN9l1u+oSuYmXXlgdKsgCAvAQgnxaC5iNI2qleueccKEVMOdfE683KPl6PYgJiwz4LSoAMOK0q75oDVJ/+qMal9HB0ggESITzhxY+QlV3AC9EJfOI0m2P2w88MjsN35mUk5hxYBYOVszC+IcknPwsOdmwhLPKcHpEnooZIOhMDSJ9GqJ9i3aMoXE5P7sPzwmT8IAdQ1RBeb/S7tLvjlqXAswjGuMWxZQAe0w9QdjC3EFM+ujOz5I5nN3XPkOjbXN9Jhteojsd52AazmT3BLG+OcGq6e0OUWLYU=
+
+# Usuario Olatz
+dn: uid=olatz,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Olatz
+sn: Olatz
+uid: olatz
+uidNumber: 1005
+gidNumber: 1003
+homeDirectory: /home/olatz
+userPassword: olatzPass
+mail: olatz@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDo5RurYtN2WP4UVSdVdrKWZ2rJ4bUP5pKh8trKhi2dTLhBc1PFLQAoCTXkEOtFs2E1LMs61a7nuKt6Rp5DxlUBEhM2+vhICBmS0TyohwJVusQ6hlbSykep8//Mq1sInFl7pxTx3uhtWl3TfX/iLhmO0Fo9ekW0FAzJt7XtscyuNWmcL4XHPNTVuEZAGglUuHNb0QYW9k2vOeehJYTaT00gIyeb2Lj5bYo62fDpl/I15HDar88zAwbzauliPrjLi0xdOjIAM+nIgLxsKRzNKnaL71XHbmYWvyfBb90xO9hCc1D2Tv7Igz2LJim/TXzuKZMaw7rgSps8ZA9Bn7g+U5flChcrWTb+ygBFUQxmXlQDYcg2uD/yghp6BRBDVJMPkbY6DG1OeahL6WHKP0Wk4qZXs+b9mTke4eoUZqnW7rtUGac5i8E4Th2ZOHaUs/GAeQ/tG5TNOiSibSlfzHvD7eeDQJ5pK16viNQI0TVHkHszT4lkbHAV3yEMS24FxlaGdIc=
+
+# Usuario Mikel
+dn: uid=mikel,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Mikel
+sn: Mikel
+uid: mikel
+uidNumber: 1006
+gidNumber: 1003
+homeDirectory: /home/mikel
+userPassword: mikelPass
+mail: mikel@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7objZG4SSLrQwRtTSplqtEhGsJvhLcQeNv2HIJovIc3qKBTkWcOqJBm1qCkFQZ+7PyiG8QlNpycmEhrtp8PuVVrxz7os5TQpb6+rE8h0t4ZHhRUYFDa3TiXOGeiE7V0ANJioQCWV6t8Fj/M0jFQS8rTlKSRXAbCnizuchOq7A4b6O3jVHXYfp6rY6XCcORo3wkbxA+6JMhHMKPdeMi2qowLdx95HxUqfXhNdHl7dnjhI4cwx8PbJEeS/XqRK4h4FEqkQc5Ovq20WB9Ch8BwWg2Yac05M4ggDaXHbtlg2EP7ayvdgBVfu9jOPY8SqlVv2UoDJklHcigX+zliJ3s9Bj1nwfvfsbD7xXzua5A4+aNxMflNqDQM7w7FtV46nqYXtLJtdwaM3/oOfiE+5TWBve18/cUBxmD4s1w+aUWUR/XwGqNnddalLhR1EGLzArvayniu1AgrKwNPR9iUPwfX+1nndfN4Ek3e+0DCwTuLGUZv/djZFNOaXjKFzhjNSeFTM=
+
+# Usuario Mario
+dn: uid=mario,ou=users,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: Mario
+sn: Mario
+uid: mario
+uidNumber: 1007
+gidNumber: 1003
+homeDirectory: /home/mario
+userPassword: marioPass
+mail: mario@ibantfg.com
+description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHeePFkVpW4uxiRGRKMMv0ciraQN3pZpJkPrJyY5OmXPoQwmg5O2BKI/1mX1iZm+H7ior0eZuRZJahWVsuJuBQAryD+dpPubW2svBG8G+t433iJnAgEslFl6cqFJunZSMqnrNglS92sTZuLG/HnVW3Bcf779rajOto2k2jvE99Y68cITzDgUKlPwjqUp92oSjPCDLVO6jj+/vGhrxidufTj0tcQZ6lrxipjyAKoyAxoUsAqs4b3TabtMmD6SqTr45nVkfAbenjH7wLrckdoVPRAB6C23gaG0tatgAmQm4djji5FjPAeEcTb7aVc/3DbZOLqEFJ7PrOy+tRtGdYFhLt9Xmn18iqLwU0R+4bXDqJzY2I5IUA2EaZJCLXCiKGmjkBUyIP2GX+Rb7uBHzTPQGCWgZnJK34i9v/oOYMWdwtm8Hh+s9dK0X7raiTFatpL1a5JBCbqk+aGrsYJwK5J9pYnTLOVkdp40JAsn4N9LSB1iQXNWLZTNpSrxtRaWwyt5U=

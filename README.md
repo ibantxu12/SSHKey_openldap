@@ -4,7 +4,8 @@
 Para crear la red con el servidor y los 5 clientes sigue los siguientes pasos:<br><br>
     1. Instala la última versión de Docker.<br>
     2. Acede a la carpeta "dockerCreator" y ejecuta el archivo "./start-app.sh".<br>
-    3. Este proyecto esta creado con usuarios de ejemplo, para eliminarlos elimina la carpeta "ldapConf". Para crear nuevos accede a openldap con el comando "docker exec -it openldap bash" y crea un archivo .ldif con los nuevos usuarios/grupos, hay ejemplos en la carpeta "ejemplos". Ejecuta el archivo con el comando "ldapadd -x -D cn=admin,dc=ibantfg,dc=com -W -f <archivo>". Para comprobar que los usuarios se han creado correctamente se puede usar el comando "slapcat".
+    3. Este proyecto cuenta con unos usuarios de ejemplo que se crean automaticamente. Se pueden modificar desde la carpeta "ldapConf/compartido/" modificando los archivos "user.ldif" y "group.ldif" Para comprobar que los usuarios se han creado correctamente se puede acceder al servidor ldap con el comando "docker exec -it openldap bash" y dentro usar el comando "slapcat".
+    
 
 ## Ejecución clasica
 Para conectarte a un cliente por SSH debes ejecutar este comando "ssh **usuario**@localhost -p **puerto**". 

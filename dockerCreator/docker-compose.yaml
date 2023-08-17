@@ -15,7 +15,8 @@ services:
       - LDAP_TLS_KEY_FILENAME=server.key
       - LDAP_TLS_CA_CRT_FILENAME=ibantfg.com.ca.crt
     volumes:
-      - ./ldapConf/slapd/database:/var/lib/ldap
+      - ./ldapConf/compartido:/root/compartido
+
     networks:
       - openldap_n
 
