@@ -26,6 +26,8 @@ services:
     hostname: cliente1
     ports:
       - 221:22
+    volumes:
+      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -36,6 +38,8 @@ services:
     hostname: cliente2
     ports:
       - 222:22
+    volumes:
+      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -46,6 +50,8 @@ services:
     hostname: cliente3
     ports:
       - 223:22
+    volumes:
+      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -56,6 +62,8 @@ services:
     hostname: cliente4
     ports:
       - 224:22
+    volumes:
+      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -66,6 +74,8 @@ services:
     hostname: cliente5
     ports:
       - 225:22
+    volumes:
+      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D

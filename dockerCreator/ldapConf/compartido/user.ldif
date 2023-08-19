@@ -3,6 +3,11 @@ objectClass: top
 objectClass: organizationalUnit
 ou: users
 
+dn: ou=groups,dc=ibantfg,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: groups
+
 
 # Usuario Javier
 dn: uid=javier,ou=users,dc=ibantfg,dc=com
@@ -18,6 +23,7 @@ homeDirectory: /home/javier
 userPassword: javierPass
 mail: javier@ibantfg.com
 description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDwR99sbF3Op7KCFBR2X8lu2QUZFjkku9+H3+/7LImh4O4MOXabNn5+bod+BeztKVUAIaevFTDHwLxxhRgbIpBENz37WJYz5TMuqLNCsfGLUEU6Q7ofnwVZ93Amg4rWoPZ6UBm+Dxqc+41vik9EyMQ+serDb1lfkw247913P7fe2lqpSwVjYjuNf0EdSHwYuxDAG0D0XNuDU1IvVq0areqkm9wcjn4NoPYyDFiMdKsxbUO8deVsIIMdJ0/UgxxCzFWvx7YLpt/xhxTWOKO3SpYZiMYhX39eLsoOhm2YOzJSVuKxunBBPK5QmgdYuvT2F0Hb8s5E8Y8qW+38JTHCPNyASD2n+BUiC82H6/3zp/kJgPHnagSNrtRNJLe/BpmnJ3UfFze4VA6ZFBgVPSh9IYbXv9y8XXwrLOn73D2pVzARvc1q4RTd0WAMcfoXHyyzx/waYRgmFLsa3O7O00pMU5idZPtm9Rmho7pnOLCkIELCqiKm9kbjb0mKwHbMG57oSik=
+
 
 # Usuario Mark
 dn: uid=mark,ou=users,dc=ibantfg,dc=com
@@ -108,3 +114,32 @@ homeDirectory: /home/mario
 userPassword: marioPass
 mail: mario@ibantfg.com
 description: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHeePFkVpW4uxiRGRKMMv0ciraQN3pZpJkPrJyY5OmXPoQwmg5O2BKI/1mX1iZm+H7ior0eZuRZJahWVsuJuBQAryD+dpPubW2svBG8G+t433iJnAgEslFl6cqFJunZSMqnrNglS92sTZuLG/HnVW3Bcf779rajOto2k2jvE99Y68cITzDgUKlPwjqUp92oSjPCDLVO6jj+/vGhrxidufTj0tcQZ6lrxipjyAKoyAxoUsAqs4b3TabtMmD6SqTr45nVkfAbenjH7wLrckdoVPRAB6C23gaG0tatgAmQm4djji5FjPAeEcTb7aVc/3DbZOLqEFJ7PrOy+tRtGdYFhLt9Xmn18iqLwU0R+4bXDqJzY2I5IUA2EaZJCLXCiKGmjkBUyIP2GX+Rb7uBHzTPQGCWgZnJK34i9v/oOYMWdwtm8Hh+s9dK0X7raiTFatpL1a5JBCbqk+aGrsYJwK5J9pYnTLOVkdp40JAsn4N9LSB1iQXNWLZTNpSrxtRaWwyt5U=
+
+
+# Grupo 1
+dn: cn=grupo1,ou=groups,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: grupo1
+gidNumber: 1001
+memberUid: javier
+memberUid: mark
+
+# Grupo 2
+dn: cn=grupo2,ou=groups,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: grupo2
+gidNumber: 1002
+memberUid: lorea
+memberUid: maite
+
+# Grupo 3
+dn: cn=grupo3,ou=groups,dc=ibantfg,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: grupo3
+gidNumber: 1003
+memberUid: olatz
+memberUid: mikel
+memberUid: mario
