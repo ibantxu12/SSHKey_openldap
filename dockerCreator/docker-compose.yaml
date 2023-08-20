@@ -27,7 +27,8 @@ services:
     ports:
       - 221:22
     volumes:
-      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
+      - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
+      - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -39,7 +40,8 @@ services:
     ports:
       - 222:22
     volumes:
-      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
+      - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
+      - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -51,7 +53,8 @@ services:
     ports:
       - 223:22
     volumes:
-      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
+      - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
+      - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -63,7 +66,8 @@ services:
     ports:
       - 224:22
     volumes:
-      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
+      - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
+      - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
@@ -75,7 +79,8 @@ services:
     ports:
       - 225:22
     volumes:
-      - ./ldapConf/scriptsClientes:/home/jlopez/scripts
+      - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
+      - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
     command: /usr/sbin/sshd -D
