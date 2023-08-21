@@ -37,7 +37,6 @@ services:
     volumes:
       - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
       - ./ldapConf/pam:/etc/pam.d/sshd
-      - ./ldapConf/sshd_config:/etc/ssh/sshd_config
     networks:
       - openldap_n
     command: ["/usr/local/bin/scripts/start_services.sh"]
