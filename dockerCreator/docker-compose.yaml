@@ -22,9 +22,9 @@ services:
   ssh_log:
     image: alpine:latest
     container_name: ssh_log
-    command: sh -c "nc -l -p 514 >> /var/log/ssh_access.log"
+    command: sh -c "while true; do nc -l -p 514 >> /var/log/ssh.log; done"
     volumes:
-      - ./ldapConf/log:/var/log
+      - ./ldapConf/ssh.log:/var/log/ssh.log
     networks:
       - openldap_n
 

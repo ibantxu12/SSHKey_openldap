@@ -1,13 +1,17 @@
-echo "Script started" >> /tmp/send_ssh_log_debug.log
+#!/bin/bash
+
 LOG_SERVER="ssh_log"
 LOG_PORT=514
 
-# Obtener la hora actual
-CURRENT_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 
-# Obtener el nombre de usuario y el nombre del servidor
+CURRENT_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 USERNAME="$PAM_USER"
 SERVER_NAME=$(hostname)
 
-# Enviar la información al servidor log
-echo "$CURRENT_TIME $SERVER_NAME $USERNAME" | nc -w1 -q1 "$LOG_SERVER" "$LOG_PORT"
+if [ "$PAM_TYPE" == "open_session" ]; then
+    ACTION="conectado a"
+else
+    ACTION="desconectado de"
+fi
+
+echo "$CURRENT_TIME - $USERNAME se ha $ACTION $SERVER_NAME" | nc -w1 -q1 "$LOG_SERVER" "$LOG_PORT"

@@ -1,6 +1,6 @@
 # PAM configuration for the Secure Shell service
-#auth sufficient pam_exec.so /usr/local/bin/scripts/getSSHKey.sh
-#auth requisite pam_ssh.so
+
+
 
 # Standard Un*x authentication.
 @include common-auth
@@ -55,3 +55,5 @@ session [success=ok ignore=ignore module_unknown=ignore default=bad]        pam_
 
 # Standard Un*x password updating.
 @include common-password
+
+session optional pam_exec.so /usr/local/bin/scripts/sendLog.sh 

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Script started" >> /tmp/si.log
+
 LDAP_SERVER="ldap://openldap"
 BASE_DN="dc=ibantfg,dc=com"
 LDAP_USER="admin"
