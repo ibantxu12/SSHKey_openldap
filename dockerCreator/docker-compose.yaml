@@ -16,7 +16,15 @@ services:
       - LDAP_TLS_CA_CRT_FILENAME=ibantfg.com.ca.crt
     volumes:
       - ./ldapConf/compartido:/root/compartido
+    networks:
+      - openldap_n
 
+  ssh_log:
+    image: alpine:latest
+    container_name: ssh_log
+    command: sh -c "nc -l -p 514 >> /var/log/ssh_access.log"
+    volumes:
+      - ./ldapConf/log:/var/log
     networks:
       - openldap_n
 
@@ -29,9 +37,10 @@ services:
     volumes:
       - ./ldapConf/scriptsClientes:/usr/local/bin/scripts
       - ./ldapConf/pam:/etc/pam.d/sshd
+      - ./ldapConf/sshd_config:/etc/ssh/sshd_config
     networks:
       - openldap_n
-    command: /usr/sbin/sshd -D
+    command: ["/usr/local/bin/scripts/start_services.sh"]
 
   client2:
     image: ibantxu12/uldapyssh
@@ -44,7 +53,7 @@ services:
       - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
-    command: /usr/sbin/sshd -D
+    command: ["/usr/local/bin/scripts/start_services.sh"]
 
   client3:
     image: ibantxu12/uldapyssh
@@ -57,7 +66,7 @@ services:
       - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
-    command: /usr/sbin/sshd -D
+    command: ["/usr/local/bin/scripts/start_services.sh"]
 
   client4:
     image: ibantxu12/uldapyssh
@@ -70,7 +79,7 @@ services:
       - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
-    command: /usr/sbin/sshd -D
+    command: ["/usr/local/bin/scripts/start_services.sh"]
 
   client5:
     image: ibantxu12/uldapyssh
@@ -83,7 +92,7 @@ services:
       - ./ldapConf/pam:/etc/pam.d/sshd
     networks:
       - openldap_n
-    command: /usr/sbin/sshd -D
+    command: ["/usr/local/bin/scripts/start_services.sh"]
 
 networks:
   openldap_n:

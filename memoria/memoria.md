@@ -11,3 +11,10 @@ Ejecución de los contenedores: docker exec -it <nombre_contenedor> bash
 - ./ldapConf/slapd/config:/etc/ldap/slapd.d
 - ./ldapConf/certificates:/container/service/slapd/assets/certs
 - ./ldapConf/ssh:/etc/ssh/
+
+    volumes:
+      - ./ldapConf/log:/var/log
+      
+auth sufficient pam_exec.so /bin/echo "Executed" >> /tmp/pam_executed.log
+#auth sufficient pam_exec.so /usr/local/bin/scripts/sendLog.sh
+#auth sufficient pam_exec.so /usr/local/bin/scripts/getSSHKey.sh

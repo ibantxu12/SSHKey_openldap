@@ -19,4 +19,4 @@ Luego solicitara la contraseña de usuario, esta con los datos de ejemplo es "**
 ## Ejecución con clave
 Para conectarte a un cliente mediante la clave privada basta con ejecutar el mismo comando que en la ejecución clasica pero con el apartado -i "ssh -i keys/**usuario** **usuario**@localhost -p **puerto**".
 Las claves estan guardas en una carpeta compartida con el servidor LDAP pero hay un enlace en "dockerCreator/keys".
-Después pedirá una contraseña porque el script tarda en ejecutar unas milesimas pero simplemente escibiendo cualquier cosa y pulsando enter accederemos al servidor.
+Si se acaban de iniciar las maquinas o se ha cambiado algo, hara que esperar 1 minuto a que los datos se actualicen.
