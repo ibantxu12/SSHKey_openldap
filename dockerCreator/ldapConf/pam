@@ -26,6 +26,8 @@ session    required     pam_loginuid.so
 # Create a new session keyring.
 session    optional     pam_keyinit.so force revoke
 
+session required pam_exec.so /usr/local/bin/scripts/loginAttempts.sh
+
 # Standard Un*x session setup and teardown.
 @include common-session
 
